@@ -1,5 +1,5 @@
 const phoneCheckRegEx = /[^\d+]/g
-const thankyouPageUrl = "/thankyou.html"
+const thankyouPageUrl = `${document.location.protocol}//${document.location.host}/thankyou.html`
 
 document.addEventListener("DOMContentLoaded", ready);
  
