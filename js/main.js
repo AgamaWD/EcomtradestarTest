@@ -77,11 +77,13 @@ function outsideClick(event) {
     const targetParent = targetEl.closest(modalClass);
 
     if(!targetEl.classList.contains(modalClass) && targetParent === null) {
+        document.body.style.overflow = "visible"
         modal.classList.add('hidden')
         document.removeEventListener('click', outsideClick)
     }
 }
 
+//Работа калькулятора
 function calculator() {
     const calculator = document.getElementById("calculator");
     const btns = calculator.querySelectorAll(".calculator__key");
