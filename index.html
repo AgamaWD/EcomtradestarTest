@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang='ru'>
+<head>
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Ecomtradestar test</title>
+   
+    <link rel='stylesheet' type='text/css' href='css/style.css'>
+</head>
+<body>
+    <main class="main">
+        <section class="main-screen">
+            <div class="container">
+                <h1 class="main-screen__title">Lorem Ipsum</h1>
+                <p class="main-screen__subtitle">Lorem Ipsum</p>
+                <p class="main-screen__text">Lorem Ipsum Lorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLo</p>
+            </div>
+        </section>
+        <section class="advantages">
+            <div class="container">
+                <h2 class="advantages__title">Наши преимущества</h2>
+                <div class="advantages__list">
+                    <div class="advantages__item advantages-card">
+                        <img src="./assets/images/advantage1.png" alt="Lorem Ipsum" class="advantages-card__img">
+                        <p class="advantages-card__title">Lorem Ipsum</p>
+                    </div>
+                    <div class="advantages__item advantages-card">
+                        <img src="./assets/images/advantage2.png" alt="Lorem Ipsum" class="advantages-card__img">
+                        <p class="advantages-card__title">Lorem Ipsum</p>
+                    </div>
+                    <div class="advantages__item advantages-card">
+                        <img src="./assets/images/advantage3.png" alt="Lorem Ipsum" class="advantages-card__img">
+                        <p class="advantages-card__title">Lorem Ipsum</p>
+                    </div>
+                    <div class="advantages__item advantages-card">
+                        <img src="./assets/images/advantage4.png" alt="Lorem Ipsum" class="advantages-card__img">
+                        <p class="advantages-card__title">Lorem Ipsum</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="info">
+            <div class="container">
+                <div class="info__textblock">
+                    <div class="info__left">
+                        <div class="info__title">Lorem Ipsum</div>
+                        <div class="info__date _last">дата не определена</div>
+                        <div class="info__text">
+                            <p>Do play they miss give so up. Words to up style of since world. We leaf to snug on no need. Way own uncommonly travelling now acceptance bed compliment solicitude. Dissimilar admiration so terminated no in contrasted it. Advantages entreaties mr he apartments do. Limits far yet turned highly repair parish talked six. Draw fond rank form nor the day eat.</p>
+                            <p>Drawings me opinions returned absolute in. Otherwise therefore sex did are unfeeling something. Certain be ye amiable by exposed so. To celebrated estimating excellence do. Coming either suffer living her gay theirs. Furnished do otherwise daughters contented conveying attempted no. Was yet general visitor present hundred too brother fat arrival. Friend are day own either lively new.</p>
+                            <p>Certainty determine at of arranging perceived situation or. Or wholly pretty county in oppose. Favour met itself wanted settle put garret twenty. In astonished apartments resolution so an it. Unsatiable on by contrasted to reasonable companions an. On otherwise no admitting to suspicion furniture it.</p>
+                        </div>
+                    </div>
+                    <div class="info__right">
+                        <div class="info__title">Lorem Ipsum</div>
+                        <div class="info__date _current">дата не определена</div>
+                        <div class="info__text">
+                            <p>Procuring education on consulted assurance in do. Is sympathize he expression mr no travelling. Preference he he at travelling in resolution. So striking at of to welcomed resolved. Northward by described up household therefore attention. Excellence decisively nay man yet impression for contrasted remarkably. There spoke happy for you are out. Fertile how old address did showing because sitting replied six. Had arose guest visit going off child she new.</p>
+                            <p>And produce say the ten moments parties. Simple innate summer fat appear basket his desire joy. Outward clothes promise at gravity do excited. Sufficient particular impossible by reasonable oh expression is. Yet preference connection unpleasant yet melancholy but end appearance. And excellence partiality estimating terminated day everything.</p>
+                            <p>Sportsman do offending supported extremity breakfast by listening. Decisively advantages nor expression unpleasing she led met. Estate was tended ten boy nearer seemed. As so seeing latter he should thirty whence. Steepest speaking up attended it as. Made neat an on be gave show snug tore.</p>
+                            <p>Spot of come to ever hand as lady meet on. Delicate contempt received two yet advanced. Gentleman as belonging he commanded believing dejection in by. On no am winding chicken so behaved. Its preserved sex enjoyment new way behaviour. Him yet devonshire celebrated especially. Unfeeling one provision are smallness resembled repulsive.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="info__btn" onclick="openModal()">Калькулятор</button>
+            </div>
+        </section>
+        <section class="order">
+            <div class="container">
+                <form action="/thankyou.html" class="order__form form-order" method="POST" id="form-order">
+                    <label class="form-order__label" for="name">
+                    Например, Ольга
+                    <input class="form-order__input" type="text" id="name" placeholder="Введите имя" required>
+                    </label>
+                    <label class="form-order__label" for="phone">
+                    Например, +79536573417
+                    <input class="form-order__input" type="tel" id="phone" placeholder="Введите номер телефона" required>
+                    </label>
+                    <button class="form-order__btn" type="submit">ЗАКАЗАТЬ СО СКИДКОЙ</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <section class="modal hidden" id="modal">
+        <div class="modal__bg"></div>
+        <div class="modal__root">
+            <div class="modal__body">
+                <div class="calculator" id="calculator">
+                    <input type="text" class="calculator__result" disabled value="0">
+                    <div class="calculator__keyboard">
+                        <div class="calculator__key _grey">AC</div>
+                        <div class="calculator__key _grey">+/-</div>
+                        <div class="calculator__key _grey">%</div>
+                        <div class="calculator__key _blue">/</div>
+                        <div class="calculator__key _dark-grey">7</div>
+                        <div class="calculator__key _dark-grey">8</div>
+                        <div class="calculator__key _dark-grey">9</div>
+                        <div class="calculator__key _blue">x</div>
+                        <div class="calculator__key _dark-grey">4</div>
+                        <div class="calculator__key _dark-grey">5</div>
+                        <div class="calculator__key _dark-grey">6</div>
+                        <div class="calculator__key _blue">-</div>
+                        <div class="calculator__key _dark-grey">1</div>
+                        <div class="calculator__key _dark-grey">2</div>
+                        <div class="calculator__key _dark-grey">3</div>
+                        <div class="calculator__key _blue">+</div>
+                        <div class="calculator__key _dark-grey _zero">0</div>
+                        <div class="calculator__key _dark-grey">,</div>
+                        <div class="calculator__key _blue">=</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script type='text/javascript' src='js/main.js'></script>
+</body>
+</html>

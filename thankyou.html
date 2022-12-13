@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang='ru'>
+<head>
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <link rel='stylesheet' type='text/css' href='../css/style.css'>
+</head>
+<body>
+    <main class="main">
+        <section class="thankyou">
+            <div class="container">
+                <form action="" class="thankyou__form form-thankyou" id="form-thankyou">
+                    <p class="form-thankyou__title">Спасибо за обращение!</p>
+                    <p class="form-thankyou__subtitle">Проверьте еще раз ваши данные:</p>
+                    <label class="form-thankyou__label" for="name">
+                    Имя:
+                    <input class="form-thankyou__input" type="text" id="name" disabled>
+                    <div class="form-thankyou__savebtn jsSaveBtn">
+                        <svg>
+                            <use xlink:href="../assets/images/icon-sprite.svg#check"></use>
+                        </svg>
+                    </div>
+                    <div class="form-thankyou__changebtn jsChangeBtn">
+                        <svg>
+                            <use xlink:href="../assets/images/icon-sprite.svg#pen"></use>
+                        </svg>
+                    </div>
+                    </label>
+                    <label class="form-thankyou__label" for="phone">
+                    Телефон:
+                    <input class="form-thankyou__input" type="tel" id="phone" disabled>
+                    <div class="form-thankyou__savebtn jsSaveBtn">
+                        <svg>
+                            <use xlink:href="../assets/images/icon-sprite.svg#check"></use>
+                        </svg>
+                    </div>
+                    <div class="form-thankyou__changebtn jsChangeBtn">
+                        <svg>
+                            <use xlink:href="../assets/images/icon-sprite.svg#pen"></use>
+                        </svg>
+                    </div>
+                    </label>
+                    <p class="form-thankyou__text">Наш специалист свяжется с вами</p>
+                </form>
+            </div>
+        </section>
+    </main>
+    <script type='text/javascript' src='/js/thankyou.js'></script>
+</body>
+</html>
